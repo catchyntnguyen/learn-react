@@ -26,7 +26,9 @@ class MyComponent extends React.Component{
                 <input type="text" value={this.state.lastName} onChange={(event) =>{this.handlerChangeLastName(event)}}/><br/><br/>
                 <input type="submit" onClick={(event) => this.handlerSubmit(event)} />
                 </form>
-                <Childcomponent/>
+                <Childcomponent
+                    name = {"Catchy"}
+                />
             </>
         )
     }

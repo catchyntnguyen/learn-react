@@ -15,10 +15,12 @@ class childComponent extends React.Component{
         lastName: ""
     }
     render () {
-        let name = "Catchy"
+        // let name = "Catchy"
+        // console.log("check props>>> ", this.props)
+        let {name} = this.props;
         return(
             <>
-            <div>childComponent</div>
+            <div>Childcomponent name: {name}</div>
             </>
         )
     }
